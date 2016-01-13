@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Practo Web Suite" verbose="2" parallel="tests"
+	thread-count="2" data-provider-thread-count="2">
+
+	<listeners>
+		<listener class-name="omelet.testng.support.TestInterceptor"></listener>
+		<listener class-name="omelet.driver.DriverInitialization"></listener>
+		<listener
+			class-name="omelet.testng.support.RetryIAnnotationTransformer"></listener>
+		<listener class-name="omelet.driver.SuiteConfiguration"></listener>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+	</listeners>
+	<test name="Practo Doc Details" preserve-order="true" parallel="methods"
+		thread-count="2">
+		<classes>
+			<class name="tests.DocDetailTest"></class>
+		</classes>
+	</test>
+</suite> 
+ 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClientEnvironments>
+        <ClientEnvironment
+        	browsername="firefox"
+        	dc.platform = ""
+        	dc.version=""
+    		remoteflag = "false"/>
+    		<!-- We can add ass many browsers as we want -->
+    		  <ClientEnvironment
+        	browsername="firefox"
+        	dc.platform = ""
+    		remoteflag = "false"/>
+</ClientEnvironments>

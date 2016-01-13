@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Conf [
+<!ELEMENT Conf (Data+)>
+<!ATTLIST Data environment CDATA #REQUIRED>
+<!ELEMENT Data (Pages)>
+<!ELEMENT Pages (Page+)>
+<!ATTLIST Page name CDATA #REQUIRED>
+]>
+
+<Conf>
+	<Data environment="staging">
+		<Pages>
+			<Page name="LandingPage">
+				<url>https://www.practo.com/</url>
+				<country>Bangalore</country>
+				<speciality>Dentist</speciality>
+				<PageTimeOut>10</PageTimeOut>
+			</Page>
+			<Page name="Doclist">
+				<name>Dr. Ramya</name>
+			</Page>
+		</Pages>
+	</Data>
+	
+	<Data environment="staging">
+		<Pages>
+			<Page name="LandingPage">
+				<url>https://www.practo.com/</url>
+				<country>Delhi</country>
+				<speciality>Dentist</speciality>
+				<PageTimeOut>10</PageTimeOut>
+			</Page>
+			<Page name="Doclist">
+				<name>Dr. Sony Mishra</name>
+			</Page>
+		</Pages>
+	</Data>
+	
+	
+
+	<!-- <Data environment="live">
+		<Pages>
+			<Page name="Google">
+				<url>https://www.google.com/</url>
+				<PageTimeOut>10</PageTimeOut>
+			</Page>
+			<Page name="Selenium">
+				<Title>Selenium - Web Browser Automation</Title>
+			</Page>
+		</Pages>
+	</Data> -->
+</Conf>
